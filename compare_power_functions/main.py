@@ -193,7 +193,7 @@ def main_windows():
     
     windows_ = Tk()
     windows_.config(width=500,height=250)
-    windows_.title("Power x^n")
+    windows_.title("compare power functions")
     #create labels, entry, buttons
     label_vxma = Label(windows_, text="X max value :")
     label_vxma.place(x=20,y=10)
@@ -234,6 +234,9 @@ def main_windows():
     label_stat0.place(x=20,y=180)
     label_stat_prc = Label(windows_, text ="-%",bg="red")
     label_stat_prc.place(x=120,y=200)
+    
+    aide = Label(windows_, text ="Created by redzack 12/2019",bg="red")
+    aide.place(x=200,y=220)
     
     button_start = Button(windows_,text="Start/Stop",command=start_calul_operations)
     button_start.place(x=300,y=140)
