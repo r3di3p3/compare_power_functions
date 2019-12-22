@@ -276,6 +276,7 @@ def create_data_file():
                 label_stat_prc.config(bg="red")
                 messagebox.showerror("Work", "STOP") 
                 return 
+        out.write("\n")
         x = x + x_step
         n = n_min
     
